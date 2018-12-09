@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.OrderController">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints maxHeight="188.0" minHeight="10.0" prefHeight="46.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="354.0" minHeight="10.0" prefHeight="354.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <Label prefHeight="280.0" prefWidth="600.0" text="Note: For your health we do not allow you to pick total meat topping more than 3" />
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="1">
+         <children>
+            <ChoiceBox fx:id="SizeBox" prefWidth="150.0" AnchorPane.leftAnchor="200.0" AnchorPane.topAnchor="0.0" />
+            <ChoiceBox fx:id="CheeseBox" prefWidth="150.0" AnchorPane.leftAnchor="200.0" AnchorPane.topAnchor="50.0">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </ChoiceBox>
+            <ChoiceBox fx:id="HamBox" prefWidth="150.0" AnchorPane.leftAnchor="200.0" AnchorPane.topAnchor="100.0" />
+            <ChoiceBox fx:id="PepperoniBox" prefWidth="150.0" AnchorPane.leftAnchor="200.0" AnchorPane.topAnchor="150.0" />
+            <Label prefHeight="26.0" prefWidth="203.0" text=" 1. Pizza Size" />
+            <Label prefHeight="30.0" prefWidth="204.0" text=" 2. Cheese" AnchorPane.topAnchor="50.0" />
+            <Label prefHeight="32.0" prefWidth="202.0" text=" 3. Ham" AnchorPane.topAnchor="100.0" />
+            <Label prefHeight="29.0" prefWidth="199.0" text=" 4. Pepperoni" AnchorPane.topAnchor="150.0" />
+            <Label prefHeight="28.0" prefWidth="197.0" text=" 5. Number of Pizza" AnchorPane.topAnchor="200.0" />
+            <TextField fx:id="NumberBox" prefHeight="31.0" prefWidth="228.0" promptText="Enter an integer from 1 to 100" AnchorPane.leftAnchor="200.0" AnchorPane.topAnchor="200.0" />
+            <Button fx:id="ConfirmButton" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" text="Confirm" AnchorPane.leftAnchor="350.0" AnchorPane.topAnchor="250.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</GridPane>
